@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", event => {
     const app = firebase.app()
     console.log(app)
-    const firebaseApp = initializeApp
 
-    const db = getFirestore(firebaseApp);
+    const db = firebase.firestore();
 
     const xaver = db.collection('users').doc('tLAFB0mF3dy958AKkHgV');
 
