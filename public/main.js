@@ -1,3 +1,12 @@
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  
 document.addEventListener("DOMContentLoaded", event => {
     const app = firebase.app()
     console.log(app)
@@ -8,7 +17,6 @@ document.addEventListener("DOMContentLoaded", event => {
 
     xaver.get()
             .then(doc => {
-
                 const data = doc.data();
                 document.write(data.name+ '<br>')
                 document.write(data.occupation+ '<br>')
@@ -16,4 +24,3 @@ document.addEventListener("DOMContentLoaded", event => {
             })
 
 });
-
