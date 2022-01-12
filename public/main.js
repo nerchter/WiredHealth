@@ -4,14 +4,15 @@ document.addEventListener("DOMContentLoaded", event => {
 
     const db = firebase.firestore();
 
-    const xaver = db.collection('users').doc('tLAFB0mF3dy958AKkHgV');
+    const xaver = db.collection('users').doc('8xZFq6mbLhgcJpukrzYm');
 
     xaver.get()
             .then(doc => {
 
                 const data = doc.data();
                 document.write(data.name+ '<br>')
-                document.write(data.compundscore)
+                document.write(data.occupation+ '<br>')
+                document.write(data.compoundScore + '<br>')
             })
 
 });
