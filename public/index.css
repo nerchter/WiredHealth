@@ -1,3 +1,5 @@
+/* colors #5292FF #FFAC1A
+
 /* Add a black background color to the top navigation */
 * {
   font-family: 'Varela Round', sans-serif;
@@ -12,7 +14,7 @@
 .topnav a {
   float: right;
   display: block;
-  color: #FFAC1A;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -50,6 +52,5 @@
 .carousel-caption {
   margin-right: 30%;
   top:30%;
-  filter:brightness(200%)
 }
 

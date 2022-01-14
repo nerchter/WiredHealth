@@ -40,18 +40,21 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
     <!--Navigation Bar-->
     <div class="topnav" id="myTopnav">
       <a href="#home" class="active" id="homelogo"><img src="/Assets/logo.png" height=70px ></a>
-      <a href="#news">News</a>
+      <a href="#news">About</a>
       <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+      <!--Hideen NavBar Only visible to therapists/organizations-->
+      <section id="hiddenNav" hidden="true">
+        <a href="#analytics" id="dataLink">Analytics</a>
+      </section>
         <i class="fa fa-bars"></i>
       </a>
     </div>
     <!--User Authentication (Google Login)-->
     <section id="whenSignedOut">
-
     <button id="signInBtn" class="btn btn-primary">Sign in with Google</button>
 
   </section>
