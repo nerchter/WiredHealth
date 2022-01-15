@@ -12,12 +12,8 @@
     <script defer src="/__/firebase/9.6.2/firebase-auth-compat.js"></script>
     <script defer src="/__/firebase/9.6.2/firebase-database-compat.js"></script>
     <script defer src="/__/firebase/9.6.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.6.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.6.2/firebase-messaging-compat.js"></script>
     <script defer src="/__/firebase/9.6.2/firebase-storage-compat.js"></script>
     <script defer src="/__/firebase/9.6.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.6.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.6.2/firebase-performance-compat.js"></script>
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -43,21 +39,21 @@
     
     <!--Navigation Bar-->
     <div class="topnav" id="myTopnav">
-      <a href="#home" class="active" id="homelogo"><img src="/Assets/logo.png" height=70px ></a>
-      <a href="#news">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" class="active" id="homelogo"><img src="/Assets/logo.png" height=60px ></a>
       <!--Hideen NavBar Only visible to therapists/organizations-->
       <section id="hiddenNav" hidden="true">
         <a href="#analytics" id="dataLink">Analytics</a>
       </section>
+      <!--Button for Google Login-->
+      <a id="whenSignedOut">
+        <button id="signInBtn" class="btn btn-primary">Sign in</button>
+      </a>
+      <a href="#About">About</a>
+      <a href="#contact">Contact</a>
         <i class="fa fa-bars"></i>
       </a>
     </div>
     <!--User Authentication (Google Login)-->
-    <section id="whenSignedOut">
-    <button id="signInBtn" class="btn btn-primary">Sign in with Google</button>
-
-  </section>
 
   <section id="whenSignedIn" hidden="true">
 
@@ -77,15 +73,23 @@
       <div class="carousel-item active">
         <img class="d-block w-100" src="/Assets/therapy.jpg" alt="First slide" >
         <div class="carousel-caption d-none d-md-block">
-          <h2>Your Mental Health deserves conversation.</h2>
-          <p>...</p>
+          <h2>Empathize.</h2>
+          <p>A chatbot which helps users cope with mental issues</p>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="/Assets/speech.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Accessible.</h2>
+          <p>With WiredHealth, there is always someone you can chat with 24/7</p>
+        </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="/Assets/therapy.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Simplify.</h2>
+          <p>Tracking personal habits has never been easier</p>
+        </div>
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
